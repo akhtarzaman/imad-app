@@ -14,11 +14,11 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile('Article Two Requested and will be handled by my server');
+  res.sendFile('Article two Requested and will be handled by my server');
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile('Article Three Requested and will be handled by my server');
+  res.sendFile('Article three Requested and will be handled by my server');
 });
 
 app.get('/ui/style.css', function (req, res) {
