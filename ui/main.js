@@ -1,10 +1,16 @@
+//smaple code
 var button=document.getElementById('counter');
+var counter=0;
 
 button.onclick = function () {
     
-    alert("Hello");
+    counter=counter+1;
+    var span = document.getElementById('count');
+    span.iinerHTML=counter.toString();
     
-    /*var request = new XMLHttpRequest();
+    
+    
+   /* var request = new XMLHttpRequest();
     
     request.onreadystatechange=function() {
         if ( request.readystate == XMLHttpRequest.DONE ) {
