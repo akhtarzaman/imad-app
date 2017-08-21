@@ -37,21 +37,19 @@ app.get('/test-db', function(req,res) {
 
 var app = express();
 app.use(morgan('combined'));
-*/
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
-
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
 
 var counter=0;
 app.get('/counter', function ( req, res ) {
     counter = counter+1;
     res.send(counter.toString());
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/article-one', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-one', function (req, res) {
@@ -65,14 +63,20 @@ app.get('/article-two', function (req, res) {
 app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
+*/
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
+
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
