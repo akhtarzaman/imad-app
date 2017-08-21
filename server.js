@@ -43,23 +43,6 @@ var articles = {
   }
     
 };
-/*
-var articleOne = {
-    title: 'Article One | Akhtar Zaman',
-    heading: 'Article One',
-    date: '21-Aug-2017',
-    content: `
-            <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
-                 <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
-                 <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-            </p>`
-};
-*/
 
 function createTemplate ( data) {
     
@@ -101,6 +84,12 @@ function createTemplate ( data) {
     return htmlTemplate;
 }
 
+app.get('/:articleName', function (req, res) {
+  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  //res.send('Article one is requested and will be served here');
+  res.send(createTemplate(articles[articleName]));
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
  });
@@ -113,11 +102,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:articleName', function (req, res) {
-  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-  //res.send('Article one is requested and will be served here');
-  res.send(createTemplate(articles[articleName]));
-});
+
 
 var port = 80;
 app.listen(port, function () {
