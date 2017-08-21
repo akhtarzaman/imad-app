@@ -5,6 +5,55 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articles = {
+  articleOne= {
+      title: 'Article One | Akhtar Zaman',
+    heading: 'Article One',
+    date: '21-Aug-2017',
+    content: `
+            <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+            </p>`
+  },
+  articleTwo: {
+      title: 'Article Two | Akhtar Zaman',
+    heading: 'Article Two',
+    date: '21-Aug-2017',
+    content: `
+            <p>
+                This is Akhtar's second page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+            </p>`
+  },
+  articleThree: {
+      title: 'Article One | Akhtar Zaman',
+    heading: 'Article One',
+    date: '21-Aug-2017',
+    content: `
+            <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                </p>
+                 <p>
+                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+            </p>`
+  }
+    
+};
+
 var articleOne = {
     title: 'Article One | Akhtar Zaman',
     heading: 'Article One',
