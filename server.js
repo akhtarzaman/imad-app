@@ -91,6 +91,6 @@ app.get('/counter', function ( req, res ) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
+*/
 
 
