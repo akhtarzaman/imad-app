@@ -12,14 +12,12 @@ var articles = {
     date: '21-Aug-2017',
     content: `
             <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                This is Akhtar's first page content 
                 </p>
                  <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                This is Akhtar's first page content 
                 </p>
-                 <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-            </p>`
+                 `
   },
   articleTwo: {
       title: 'Article Two | Akhtar Zaman',
@@ -27,13 +25,9 @@ var articles = {
     date: '21-Aug-2017',
     content: `
             <p>
-                This is Akhtar's second page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
+                This is Akhtar's second page content !
                  <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
-                 <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                This is Akhtar's first page content !!! 
             </p>`
   },
   articleThree: {
@@ -42,18 +36,14 @@ var articles = {
     date: '21-Aug-2017',
     content: `
             <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
+                This is Akhtar's third page content ! 
                  <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
-                </p>
-                 <p>
-                This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
+                This is Akhtar's 3rd page content !!! 
             </p>`
   }
     
 };
-
+/*
 var articleOne = {
     title: 'Article One | Akhtar Zaman',
     heading: 'Article One',
@@ -69,6 +59,7 @@ var articleOne = {
                 This is Akhtar's first page content !!! This is Akhtar's first page content !!! This is Akhtar's first page content !!!
             </p>`
 };
+*/
 
 function createTemplate ( data) {
     
