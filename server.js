@@ -85,8 +85,8 @@ function createTemplate ( data) {
 
 app.get('/:articleName', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-  res.send('Article one is requested and will be served here');
- // res.send(createTemplate(articles[articleName]));
+  //res.send('Article one is requested and will be served here');
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/', function (req, res) {
